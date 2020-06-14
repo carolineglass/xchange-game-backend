@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_14_184808) do
+ActiveRecord::Schema.define(version: 2020_06_14_212034) do
 
   create_table "conversions", force: :cascade do |t|
     t.integer "country_id"
@@ -23,9 +23,11 @@ ActiveRecord::Schema.define(version: 2020_06_14_184808) do
     t.string "name"
     t.string "flag"
     t.string "code"
-    t.integer "rate"
+    t.float "rate"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "currency"
+    t.string "currency_symbol"
   end
 
   create_table "items", force: :cascade do |t|

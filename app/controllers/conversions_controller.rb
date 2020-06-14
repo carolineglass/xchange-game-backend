@@ -1,6 +1,6 @@
 class ConversionsController < ApplicationController
     def index
-        conversions = Conversions.all
+        conversions = Conversion.all
         render json: conversions, include: [:country, :item]
-      end
+    end
 end
