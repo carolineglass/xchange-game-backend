@@ -8,6 +8,7 @@
 
 require 'httparty'
 require 'byebug'
+require 'nokogiri'
 
 puts "destroy countries"
 Country.destroy_all
@@ -26,8 +27,8 @@ url = 'http://countryapi.gear.host/v1/Country/getCountries'
 response = HTTParty.get(url)
 data = response.parsed_response
 
-url = 'https://openexchangerates.org/api/latest.json?app_id=d94eb4ec7e764ab2b336585a0deda920'
-resp = HTTParty.get(url)
+url2 = 'https://openexchangerates.org/api/latest.json?app_id=d94eb4ec7e764ab2b336585a0deda920'
+resp = HTTParty.get(url2)
 rate_data = resp.parsed_response
 
 rate_data["rates"].each do |code, rate|
@@ -36,7 +37,7 @@ rate_data["rates"].each do |code, rate|
             Country.create({
                 name: country["Name"],
                 currency: country["CurrencyName"],
-                flag: country["FlagPng"],
+                flag: country["Flag"],
                 code: code,
                 currency_symbol: country["CurrencySymbol"],
                 rate: rate
