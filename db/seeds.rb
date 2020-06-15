@@ -78,3 +78,14 @@ puts "create conversions"
         item_id: Item.all.sample.id,
     })
 end
+
+score = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+2.times do
+    Scoreboard.create(username: "Josh", score: score.sample)
+end
+
+2.times do 
+    Scoreboard.create(username: "Caroline", score: score.sample)
+end
+
