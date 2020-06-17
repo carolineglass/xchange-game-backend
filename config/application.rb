@@ -27,8 +27,12 @@ module XchangeApi
     #added this after uncommenting the gem 'rack-cors'
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-          origins '*'
-          resource '*', headers: :any, methods: [:get, :post]
+        origins '*'
+        resource(
+          '*',
+          headers: :any,
+          methods: [:get, :patch, :put, :delete, :post, :options]
+          )
       end
     end
 
@@ -43,3 +47,4 @@ module XchangeApi
     config.api_only = true
   end
 end
+
