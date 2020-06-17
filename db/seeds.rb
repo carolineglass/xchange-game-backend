@@ -58,18 +58,29 @@ end
 # end
 
 
-puts "create items"
-bread = Item.create(name: "Loaf of Bread", price: 2.99, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSOxVzQ9gg1BW9muXlcWU7T5G4U-w2kTHumU7EKM5f3fZTo1ESB77Q&usqp=CAc")
-milk = Item.create(name: "Gallon of Milk", price: 4.00, img: "https://pikfly.com/images/products/164/41060.jpg")
-coffee = Item.create(name: "Starbucks Grande Iced Coffee", price: 4.45, img: "https://i.insider.com/5a38216ca8d5b06f068b4579?width=1100&format=jpeg&auto=webp")
-eggs = Item.create(name: "Dozen eggs", price: 2.00, img: "https://cdn11.bigcommerce.com/s-ek50668lzs/images/stencil/1280x1280/products/3012/3276/5514-lg__14388.1577655497.jpg?c=1?imbypass=on&imbypass=on")
-beer = Item.create(name: "Budlight 6 pack", price: 6.50, img: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS1Nmn7bq6U6oTfAp10Xc7_54kpdSsykzvqnHZsOuB22-VZclzOKJzs9GVqoocZjH-zZMLpngkassX75xtHfzqGA_CYLaQi&usqp=CAc")
-cereal = Item.create(name: "Cinammon Toast Crunch", price: 5.60, img: "https://i5.walmartimages.com/asr/bed0f375-092e-4a7d-8213-d2d0156e5628_1.7e5d2fc89dae9edc1f6a5f26bb422028.jpeg")
-icecream = Item.create(name: "Vanilla 14fl oz Ice Cream", price: 5.50, img: "https://www.adileepizza.com/wp-content/uploads/2018/12/hdv.jpg")
-watermelon = Item.create(name: "Watermelon", price: 12.99, img: "https://media.istockphoto.com/photos/watermelon-picture-id92006627?k=6&m=92006627&s=612x612&w=0&h=TO8W4xfSanflBPetAOgvZeFV4BXWK53epMR8l5jZ41A=")
-kind = Item.create(name: "Dark Chocolate Nuts & Sea Salt Kind Bar", price: 13.99, img: "https://barbend.com/wp-content/uploads/2019/07/kind-275x275.png")
-pizza = Item.create(name: "Papa John's The Works", price: 17.99, img: "https://www.papajohns.com/static-assets/a/images/web/product/pizzas/the-works-slate-compressed.jpg")
+# puts "create items"
+# bread = Item.create(name: "Loaf of Bread", price: 2.99, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSOxVzQ9gg1BW9muXlcWU7T5G4U-w2kTHumU7EKM5f3fZTo1ESB77Q&usqp=CAc")
+# milk = Item.create(name: "Gallon of Milk", price: 4.00, img: "https://pikfly.com/images/products/164/41060.jpg")
+# coffee = Item.create(name: "Starbucks Grande Iced Coffee", price: 4.45, img: "https://i.insider.com/5a38216ca8d5b06f068b4579?width=1100&format=jpeg&auto=webp")
+# eggs = Item.create(name: "Dozen eggs", price: 2.00, img: "https://cdn11.bigcommerce.com/s-ek50668lzs/images/stencil/1280x1280/products/3012/3276/5514-lg__14388.1577655497.jpg?c=1?imbypass=on&imbypass=on")
+# beer = Item.create(name: "Budlight 6 pack", price: 6.50, img: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS1Nmn7bq6U6oTfAp10Xc7_54kpdSsykzvqnHZsOuB22-VZclzOKJzs9GVqoocZjH-zZMLpngkassX75xtHfzqGA_CYLaQi&usqp=CAc")
+# cereal = Item.create(name: "Cinammon Toast Crunch", price: 5.60, img: "https://i5.walmartimages.com/asr/bed0f375-092e-4a7d-8213-d2d0156e5628_1.7e5d2fc89dae9edc1f6a5f26bb422028.jpeg")
+# icecream = Item.create(name: "Vanilla 14fl oz Ice Cream", price: 5.50, img: "https://www.adileepizza.com/wp-content/uploads/2018/12/hdv.jpg")
+# watermelon = Item.create(name: "Watermelon", price: 12.99, img: "https://media.istockphoto.com/photos/watermelon-picture-id92006627?k=6&m=92006627&s=612x612&w=0&h=TO8W4xfSanflBPetAOgvZeFV4BXWK53epMR8l5jZ41A=")
+# kind = Item.create(name: "Dark Chocolate Nuts & Sea Salt Kind Bar", price: 13.99, img: "https://barbend.com/wp-content/uploads/2019/07/kind-275x275.png")
+# pizza = Item.create(name: "Papa John's The Works", price: 17.99, img: "https://www.papajohns.com/static-assets/a/images/web/product/pizzas/the-works-slate-compressed.jpg")
 
+puts "create items"
+bread = Item.create(name: "Grapes", price: 3, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/grapes_1f347.png")
+milk = Item.create(name: "Avocados", price: 2, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/avocado_1f951.png")
+coffee = Item.create(name: "Glass of Wine", price: 7, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/wine-glass_1f377.png")
+eggs = Item.create(name: "Taco", price: 3, img: "https://emojipedia.org/taco/")
+beer = Item.create(name: "Beer", price: 5, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/beer-mug_1f37a.png")
+cereal = Item.create(name: "Cocktail", price: 10, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/tropical-drink_1f379.png")
+icecream = Item.create(name: "Vanilla Ice Cream", price: 1, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/soft-ice-cream_1f366.png")
+watermelon = Item.create(name: "Slice", price: 2, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/slice-of-pizza_1f355.png")
+kind = Item.create(name: "Chocolate Bar", price: 1, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/chocolate-bar_1f36b.png")
+pizza = Item.create(name: "Sushi", price: 10, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/sushi_1f363.png")
 
 puts "create conversions"
 100.times do 
