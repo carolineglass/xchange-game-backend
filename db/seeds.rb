@@ -71,16 +71,22 @@ end
 # pizza = Item.create(name: "Papa John's The Works", price: 17.99, img: "https://www.papajohns.com/static-assets/a/images/web/product/pizzas/the-works-slate-compressed.jpg")
 
 puts "create items"
-bread = Item.create(name: "Grapes", price: 3, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/grapes_1f347.png")
-milk = Item.create(name: "Avocados", price: 2, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/avocado_1f951.png")
-coffee = Item.create(name: "Glass of Wine", price: 7, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/wine-glass_1f377.png")
-eggs = Item.create(name: "Taco", price: 3, img: "https://emojipedia.org/taco/")
-beer = Item.create(name: "Beer", price: 5, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/beer-mug_1f37a.png")
-cereal = Item.create(name: "Cocktail", price: 10, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/tropical-drink_1f379.png")
-icecream = Item.create(name: "Vanilla Ice Cream", price: 1, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/soft-ice-cream_1f366.png")
-watermelon = Item.create(name: "Slice", price: 2, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/slice-of-pizza_1f355.png")
-kind = Item.create(name: "Chocolate Bar", price: 1, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/chocolate-bar_1f36b.png")
-pizza = Item.create(name: "Sushi", price: 10, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/sushi_1f363.png")
+Item.create(name: "Grapes", price: 3, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/grapes_1f347.png")
+Item.create(name: "Avocados", price: 2, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/avocado_1f951.png")
+Item.create(name: "Glass of Wine", price: 7, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/wine-glass_1f377.png")
+Item.create(name: "Bagel", price: 2, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/bagel_1f96f.png")
+Item.create(name: "Beer", price: 5, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/beer-mug_1f37a.png")
+Item.create(name: "Cocktail", price: 10, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/tropical-drink_1f379.png")
+Item.create(name: "Vanilla Ice Cream", price: 1, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/soft-ice-cream_1f366.png")
+Item.create(name: "Pizza Slice", price: 2, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/slice-of-pizza_1f355.png")
+Item.create(name: "Chocolate Bar", price: 1, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/chocolate-bar_1f36b.png")
+Item.create(name: "Sushi", price: 10, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/sushi_1f363.png")
+Item.create(name: "Teddy Bear", price: 5, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/teddy-bear_1f9f8.png")
+Item.create(name: "Movie Ticket", price: 10, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/admission-tickets_1f39f.png")
+Item.create(name: "Bread", price: 3, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/bread_1f35e.png")
+Item.create(name: "Hot Dog", price: 1, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/hot-dog_1f32d.png")
+Item.create(name: "Cup of Coffee", price: 10, img: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/hot-beverage_2615.png")
+
 
 puts "create conversions"
 100.times do 
@@ -99,4 +105,17 @@ end
 2.times do 
     Scoreboard.create(username: "Caroline", score: score.sample)
 end
+
+2.times do 
+    Scoreboard.create(username: "Steven", score: score.sample)
+end
+
+2.times do 
+    Scoreboard.create(username: "Jallen", score: score.sample)
+end
+
+2.times do 
+    Scoreboard.create(username: "Meghann", score: score.sample)
+end
+
 
